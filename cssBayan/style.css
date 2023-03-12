@@ -6,14 +6,25 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f5f7fa;
-  padding: 40px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #595959;
-	overflow:hidden;
+	width: 100%;
+	/* overflow:hidden; */
+}
+
+.container {
+  width: 80%;
+  max-width: 44em;
+  margin: 4em auto;
+}
+.title {
+	font-size: 4em;
+	padding: 0.5em;
 }
