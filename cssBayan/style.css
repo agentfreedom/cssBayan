@@ -45,7 +45,7 @@ input:checked + label .close {
   display: flex;
   justify-content: space-between;
   align-items: center;
-	padding-bottom: 1em;
+	padding-bottom: 0.5em;
 }
 .bayan-block--title {
   margin: 0;
@@ -84,5 +84,20 @@ input:checked + label .img {
 }
 .bayan:active .close{
   fill: #000000;
-  transition:0s;
+  transition: .1s;
 }
+
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 90%;
+  }
+	.title {
+    font-size: 2.8em;
+		padding-bottom: 1.5em;
+  }
+  .bayan-block--title {
+    font-size: 0.95em;
+  }
+}
+
+
