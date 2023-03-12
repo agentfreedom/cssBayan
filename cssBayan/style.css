@@ -39,11 +39,13 @@ input:checked + label .close {
   border-top: 0.25em solid #595959;
   padding: 1.9em;
   cursor: pointer;
+	transition: .1s;
 }
 .bayan-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
+	padding-bottom: 1em;
 }
 .bayan-block--title {
   margin: 0;
@@ -54,18 +56,33 @@ input:checked + label .close {
   opacity: 1;
   width: 1.5em;
   height: 1.5em;
-  transition: all .8s ease-in-out;
+  transition: all .8s ease;
 }
 input:checked + label .bayan-block--title {
   color: #000000;
 }
 .img {
-  max-width: 23em;
   display: block;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 40em;
   max-height: 0;
+  margin: 0 auto;
   overflow: hidden;
   transition: 1s;
+}
+
+input:checked + label .img {
+  max-height: 40em;
+}
+.bayan:active .bayan-block--title {
+  color: #000000;
+  transition: .1s;
+}
+.bayan:active .img, .bayan:active .close{
+  opacity: 0.6;
+  transition: .1s;
+}
+.bayan:active .close{
+  fill: #000000;
+  transition:0s;
 }
