@@ -28,3 +28,35 @@ body {
 	font-size: 4em;
 	padding: 0.5em;
 }
+
+input[type=checkbox] {
+  display: none;
+}
+input:checked + label .close {
+  transform: rotate(45deg);
+}
+
+.bayan {
+  border-top: 0.25em solid #595959;
+  padding: 1.9em;
+  cursor: pointer;
+}
+.bayan-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bayan-block--title {
+  margin: 0;
+  font-size: 1.5em;
+  color: #595959;
+}
+.close {
+  opacity: 1;
+  width: 1.5em;
+  height: 1.5em;
+  transition: all .8s ease-in-out;
+}
+input:checked + label .bayan-block--title {
+  color: #000000;
+}
